@@ -150,4 +150,110 @@
                     </div>
 
                     <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl group">
-                        <img src="https
+                        <img src="https://images.unsplash.com/photo-1627993077673-c15764022872?q=80&w=400&auto=format&fit=crop" alt="Uttarakhand Himalayan Trails" class="w-full h-48 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-primary-red">Uttarakhand Trails</h3>
+                            <p class="text-gray-300 text-sm mb-4">Deep forest trails and panoramic views in the 'Devbhoomi' (Land of the Gods).</p>
+                            <button onclick="alert('Uttarakhand Checklist: Rain gear, puncture repair kit, insect repellent, and good knobby tires.')" class="w-full py-2 bg-primary-red text-white rounded-lg hover:bg-red-600 transition duration-300 font-medium mt-2">✨ Gear Checklist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-20 bg-primary-red/10">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <blockquote class="max-w-4xl mx-auto">
+                    <p class="text-3xl sm:text-4xl font-light italic text-gray-200 mb-6">
+                        "Motonikx didn't just organize a trip, they curated a life-changing expedition. The local knowledge and safety support were impeccable."
+                    </p>
+                    <footer class="text-lg font-semibold text-primary-red">- Sophie L., International Rider, Leh Ladakh 2024</footer>
+                </blockquote>
+                <a href="#contact" class="inline-block mt-8 px-8 py-3 bg-primary-red text-white font-bold rounded-full shadow-lg hover:bg-red-600 transition duration-300">
+                    Book Your Seat Now
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-12">Start Your Expedition</h2>
+                <p class="text-center text-gray-400 mb-8 max-w-xl mx-auto">Ready to ride? Tell us which tour you are interested in and we'll send you a detailed itinerary and gear checklist.</p>
+
+
+                <div class="max-w-2xl mx-auto bg-gray-800 p-8 rounded-xl shadow-2xl">
+                    <form action="https://formspree.io/f/mankbdzk" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:border-primary-red focus:ring focus:ring-primary-red/50 transition duration-200 text-white" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:border-primary-red focus:ring focus:ring-primary-red/50 transition duration-200 text-white" required>
+                        </div>
+                        <div>
+                            <label for="tour" class="block text-sm font-medium text-gray-300 mb-1">Interested Tour</label>
+                            <select id="tour" name="tour" class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:border-primary-red focus:ring focus:ring-primary-red/50 transition duration-200 text-white" required>
+                                <option value="" disabled selected>Select an adventure...</option>
+                                <option value="leh-ladakh">Leh Ladakh Expedition</option>
+                                <option value="rajasthan">Rajasthan Desert Safari</option>
+                                <option value="himachal">Himachal Pradesh Traverse</option>
+                                <option value="uttarakhand">Uttarakhand Trails</option>
+                                <option value="custom">Custom/Private Tour</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Additional Comments</label>
+                            <textarea id="message" name="message" rows="4" placeholder="I have 3 riders in my group and need bike rentals..." class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:border-primary-red focus:ring focus:ring-primary-red/50 transition duration-200 text-white"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3 bg-primary-red text-white font-bold text-lg rounded-lg shadow-md hover:bg-red-600 transition duration-300 transform hover:scale-[1.01]">
+                            Send Inquiry
+                        </button>
+                        <p class="text-center text-xs text-gray-500 mt-4">We cater to national and international riders.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-accent-dark py-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400">
+            <div class="mb-4">
+                <a href="#" class="mx-3 hover:text-primary-red transition duration-300">FAQ & Permits</a>
+                <a href="#" class="mx-3 hover:text-primary-red transition duration-300">Gear Checklist</a>
+                <a href="#" class="mx-3 hover:text-primary-red transition duration-300">Community Forum</a>
+            </div>
+            <p class="text-sm">&copy; 2025 Motonikx. All Rights Reserved. Your Journey Starts Here.</p>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="fixed bottom-6 right-6 p-3 bg-primary-red rounded-full shadow-lg hover:bg-red-600 transition duration-300 opacity-0 pointer-events-none">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </button>
+
+    <div id="itineraryModal" class="fixed inset-0 z-[100] bg-black bg-opacity-75 hidden flex items-center justify-center p-4">
+        <div class="bg-gray-800 rounded-xl w-full max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl relative">
+            <div class="p-6 border-b border-gray-700 flex justify-between items-center sticky top-0 bg-gray-800">
+                <h3 class="text-2xl font-bold text-primary-red">10-Day Spiti Valley Extreme Loop: Delhi to Delhi</h3>
+                <button onclick="closeItineraryModal()" class="text-gray-400 hover:text-white transition duration-200 p-2 rounded-full hover:bg-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <div class="p-6 text-gray-300 space-y-8">
+                <p class="text-lg font-medium text-gray-400">This expedition covers over 1,800 km, traversing the entire Spiti circuit, including the high-altitude passes, starting and ending in Delhi.</p>
+
+                <div class="space-y-4">
+                    <div class="p-4 bg-gray-900 rounded-lg shadow-inner border-l-4 border-primary-red">
+                        <p class="text-xl font-bold text-primary-red mb-1">Day 1: Delhi to Shimla / Narkanda</p>
+                        <p class="text-sm text-gray-400">Distance: 380 - 450 km | Ascent: 2,708m (8,885 ft)</p>
+                        <p class="mt-2">The longest day on the road. We leave the plains of Delhi and climb steadily through Haryana and into the pine forests of Himachal. Halt near Shimla or proceed to **Narkanda** for an early start on the Hindustan-Tibet highway.</p>
+                    </div>
+
+                    <div class="p-4 bg-gray-900 rounded-lg shadow-inner border-l-4 border-primary-red">
+                        <p class="text-xl font-bold text-primary-red mb-1">Day 2: Narkanda to Sangla / Chitkul</p>
+                        <p class="text-sm text-gray-400">Distance: 175 km | Ascent: 3,450m (11,320 ft)</p>
+                        <p class="mt-2">Following the dramatic **Sutlej River gorge**, we ride the winding mountain roads deep into the beautiful Kinnaur Valley. Tonight we stay in **Chitkul**, the last inhabited village near the Indo-Tibet border, known for its pristine beauty.</p>
+                    </div>
+
+                    <div class="p-
