@@ -256,4 +256,100 @@
                         <p class="mt-2">Following the dramatic **Sutlej River gorge**, we ride the winding mountain roads deep into the beautiful Kinnaur Valley. Tonight we stay in **Chitkul**, the last inhabited village near the Indo-Tibet border, known for its pristine beauty.</p>
                     </div>
 
-                    <div class="p-
+                    <div class="p-4 bg-gray-900 rounded-lg shadow-inner border-l-4 border-primary-red">
+                        <p class="text-xl font-bold text-primary-red mb-1">Day 3: Chitkul to Kaza (Spiti Valley)</p>
+                        <p class="text-sm text-gray-400">Distance: 220 km | Ascent: 3,800m (12,500 ft)</p>
+                        <p class="mt-2">An extreme riding day. We pass through the treacherous mallings of the old route, witness the confluence at **Khab**, and cross the boundary into the Trans-Himalayan desert region of Spiti. Arrive at the headquarters, **Kaza**.</p>
+                    </div>
+
+                    <div class="p-4 bg-gray-900 rounded-lg shadow-inner border-l-4 border-primary-red">
+                        <p class="text-xl font-bold text-primary-red mb-1">Day 4: Kaza Local Loop (Key, Hikkim, Komik)</p>
+                        <p class="text-sm text-gray-400">Distance: 70 km | Altitude: 4,520m (14,830 ft)</p>
+                        <p class="mt-2">Sightseeing and acclimatization day. We visit the iconic **Key Monastery**, send a postcard from the world's highest post office at **Hikkim**, and ride to **Komik**, one of the highest villages connected by road. Prepare for the passes ahead.</p>
+                    </div>
+                    
+                    <div class="p-4 bg-gray-900 rounded-lg shadow-inner border-l-4 border-primary-red">
+                        <p class="text-xl font-bold text-primary-red mb-1">Day 5: Kaza to Chandrataal Lake</p>
+                        <p class="text-sm text-gray-400">Distance: 130 km | Altitude: 4,300m (14,100 ft)</p>
+                        <p class="mt-2">We leave Kaza and tackle the daunting **Kunzum Pass** (4,590m). After a challenging descent, we set up camp near the stunning, crescent-shaped, high-altitude alpine lake, **Chandrataal** (Moon Lake).</p>
+                    </div>
+
+                    <div class="p-4 bg-gray-900 rounded-lg shadow-inner border-l-4 border-primary-red">
+                        <p class="text-xl font-bold text-primary-red mb-1">Day 6: Chandrataal to Manali</p>
+                        <p class="text-sm text-gray-400">Distance: 120 km | Altitude: 2,050m (6,726 ft)</p>
+                        <p class="mt-2">A rough early ride through Batal and Chhatru, followed by a smooth descent through the newly constructed **Atal Tunnel**, which brings us into the lush green Kullu Valley and to the tourist hub of **Manali**.</p>
+                    </div>
+                    
+                    <div class="p-4 bg-gray-900 rounded-lg shadow-inner border-l-4 border-primary-red">
+                        <p class="text-xl font-bold text-primary-red mb-1">Day 7: Manali Rest Day / Buffer</p>
+                        <p class="mt-2">Mandatory rest day to recover from the high-altitude riding. Use this as a buffer for any delays on the passes, or enjoy local sightseeing, shopping, or bike maintenance in Manali.</p>
+                    </div>
+                    
+                    <div class="p-4 bg-gray-900 rounded-lg shadow-inner border-l-4 border-primary-red">
+                        <p class="text-xl font-bold text-primary-red mb-1">Day 8: Manali to Chandigarh / Ropar</p>
+                        <p class="text-sm text-gray-400">Distance: 270 - 300 km | Descent to 321m (1,053 ft)</p>
+                        <p class="mt-2">We begin the long descent from the hills, riding alongside the Beas and Sutlej rivers. This is a mix of mountain roads and highway, ending the day on the edge of the plains near **Chandigarh** or Ropar.</p>
+                    </div>
+
+                    <div class="p-4 bg-gray-900 rounded-lg shadow-inner border-l-4 border-primary-red">
+                        <p class="text-xl font-bold text-primary-red mb-1">Day 9: Chandigarh to Delhi</p>
+                        <p class="text-sm text-gray-400">Distance: 250 km | Plains Riding</p>
+                        <p class="mt-2">The final leg of the journey. A full day of highway riding on the plains. We arrive back in **Delhi** in the evening. Handover of motorcycles and farewell dinner/celebration.</p>
+                    </div>
+
+                    <div class="p-4 bg-gray-900 rounded-lg shadow-inner border-l-4 border-primary-red">
+                        <p class="text-xl font-bold text-primary-red mb-1">Day 10: Departure</p>
+                        <p class="mt-2">Departure from Delhi after breakfast. Tour ends.</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-4 border-t border-gray-700">
+                    <p class="text-sm text-gray-500 italic">Note: This itinerary is highly dependent on the opening dates of Kunzum Pass (usually late May/early June). Road conditions between Day 2 and Day 6 are generally challenging, with frequent water crossings and loose gravel.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // --- Modal Control Functions (Simplified) ---
+        function showItinerary(tourName) {
+            document.getElementById('itineraryModal').classList.remove('hidden');
+            document.body.classList.add('overflow-hidden'); // Prevent background scrolling
+        }
+
+        function closeItineraryModal() {
+            document.getElementById('itineraryModal').classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        // --- Standard DOMContentLoaded and Scroll Logic ---
+        document.addEventListener('DOMContentLoaded', () => {
+            // Smooth scroll to top button logic
+            const scrollTopBtn = document.getElementById('scrollTopBtn');
+            window.onscroll = function() {
+                if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                    scrollTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                    scrollTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+                } else {
+                    scrollTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+                    scrollTopBtn.classList.add('opacity-0', 'pointer-events-none');
+                }
+            };
+            scrollTopBtn.onclick = function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            };
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
